@@ -1,0 +1,53 @@
+Suppose we have water jugs with capacity a and b where a<=b. The state of the system is 
+described below with a pair of numbers (x,y) where x is the amout of water in jug a and 
+y is the amount of water in jug b. Initially both the jugs are empty ie.
+
+(0,0)
+(a,0) fill a
+(0,a) pour a into b
+(a,a) fill a again
+(2a-b,b) fill b
+(2a-b,0) empty b 
+(0,2a-b) pour a in b 
+(a,2a-b) fill a again 
+(2b-2a,b) pour a in b 
+(2b-2a,0) empty b 
+(0,2b-2a) pour a into b 
+(a,2b-2a) fill a 
+(2a-b,b)
+
+We make an observation that at each step both x and y are of the form aX+bY.
+That is the amount of water in both jugs at any time is of linear form with a and b.
+We need to prove the above statement.
+
+Let's approach this with induction
+
+Base case: x=0 and y=0 then x=y=a.0+b.0 thus applicable
+Inductive assumption: Let's assume it is true for random x and y ie. x=aX+bY and y=aM+bN
+after n cases. we need to prove it for the n+1 case.
+
+After n cases we have a linear combination of a and b in both the containers.
+
+What are the possible things that could happen in the (n+1)th case?
+1. We could empty one of the two containers. In this case the amount of water in the 
+   containers would be a linear combination of a and b so this satisfies our requirement.
+2. We could fill the larger container with the contents of the smaller container.
+
+    x=aM+bN 
+    y=aI+bJ
+    If we pour the contents of x into y one of two things happens.
+    1. b gets full in which case we stop pouring. Thus y=b and x=aM+bN-(b-(aI+bJ)) both of 
+        which are linear functions of a and b.
+    2. b does not become full and a gets empty
+        x=0 and y=aI+bJ+aM+bN=a(I+M)+b(J+N) both of which are linear functions of a and b.
+Thus in all possible cases the function is satisfied. Thus we can say it is true.
+
+
+
+
+
+
+
+
+
+
