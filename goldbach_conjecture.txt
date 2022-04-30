@@ -1,0 +1,50 @@
+Goldbach's conjecture states that every even integer greater than or equal to two is a sum of two primes. Eg. 4=2+3,6=3+3,20=13+7
+The conjecture holds for all numbers upto 10^16. Today we know that every even integer is the sum of atmost 6 primes.
+
+
+The above conjecture has not been proved but in the realms of computation is very useful. We can constrain ourselves to numbers below 10^16
+(Which is a really big number!) and work under the assumption that every even number can be expressed as a sum of two prime numbers.
+
+Is there a way to find these numbers?
+
+a+b=2*n
+
+I personally cant seem to find these numbers myself with the given information. We can maybe design fun amateur cryptosystems using this
+information.
+
+Obviously it will not be production grade but we can have some fun and learn a bit more in the process.
+
+How can we design this system?
+
+What information do we have?
+1. One even number,n >= 2
+2. Two prime numbers,a and b
+3. The relation a+b=n,for all n<=10^16
+
+
+If we know the even number and one of the primes how long will it take us to find the other prime?
+How long will it take us to find both the primes?
+
+
+How many bits will be required to store 10^16?
+Not very many.
+
+Turns out finding the two prime numbers is a well documented leetcode question. We'll learn more about it in the algorithms class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
