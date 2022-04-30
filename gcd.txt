@@ -1,0 +1,22 @@
+Let's now work with some gcd.
+
+The greatest common divisor of a and b os the largest number that divides both a and b.
+
+The gcd turns out to be a very valuable piece of information about the relationship between a and b 
+and for reasoning about integers in general.
+
+Woahla!!
+
+The gdc of a and b is the smallest possible linear combination of a and b!!!!
+
+Which also means that there is no other linear combination of a and b which results in a smaller
+integer value.
+
+aX+bY>=gcd(a,b);
+
+We need to prove the above statement.
+
+
+
+
+
