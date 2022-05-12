@@ -7,10 +7,10 @@ The above conjecture has not been proved but in the realms of computation is ver
 
 Is there a way to find these numbers?
 
-a+b=2*n
+a+b=2*n, where a and b are two prime numbers.
 
-I personally cant seem to find these numbers myself with the given information. We can maybe design fun amateur cryptosystems using this
-information.
+
+I personally cant seem to find these numbers myself with the given information. We can maybe design fun amateur cryptosystems using this information.
 
 Obviously it will not be production grade but we can have some fun and learn a bit more in the process.
 
@@ -30,21 +30,5 @@ How many bits will be required to store 10^16?
 Not very many.
 
 Turns out finding the two prime numbers is a well documented leetcode question. We'll learn more about it in the algorithms class.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -1,11 +1,13 @@
 Let's now work with some gcd.
 
-The greatest common divisor of a and b os the largest number that divides both a and b.
+The greatest common divisor of a and b is the largest number that divides both a and b.
 
 The gcd turns out to be a very valuable piece of information about the relationship between a and b 
 and for reasoning about integers in general.
 
 Woahla!!
+
+The below statement is very profound.
 
 The gdc of a and b is the smallest possible linear combination of a and b!!!!
 
@@ -15,6 +17,89 @@ integer value.
 aX+bY>=gcd(a,b);
 
 We need to prove the above statement.
+
+
+Linear Combinations of GCD
+
+The below theorem is a very important theorem regarding the gcd of two numbers. This unlike most theorems should be remembered.
+
+Theorem 4.2.1: The gcd(a,b)>= aX+bY, ie. the gcd of a and b is the smallest linear combination of a and b.
+
+For eg the gcd(52,44) = 4 and sure enough 4 is the smallest linear combination of 52 and 44 because 6*52+(-7)*44 = 4.
+
+We need to prove the above statement which is very intersting.
+
+
+Proof of theorem 4.2.1: By the well ordering principle there is a smallest possible combination of a and b call it m.
+We'll prove that m=gcd(a,b) by showing both gcd(a,b)<=m and m<=gcd(a,b)
+
+
+First we'll show that gcd(a,b)<=m.
+Let c be any common divisor of a and b such that c|a and c|b.
+Therefore c|sa+tb for any s and t
+
+a=k.c
+sa= skc
+
+b=l.c
+tb=tlc
+
+c|tlc+skc
+c|c(tl+sk)
+
+So there is some c which divides sa+tb for any s and t.
+
+The gcd(a,b) is by definition a divisor of both a and b. So gcd(a,b) | sa+tb.
+So gcd(a,b) | m as m|sa+tb
+hence gcd(a,b)<=m
+
+Now we show that m<=gcd(a,b)
+We show this by showing that m | a.
+
+A symmetric argument would show that m | b which means m is a common divisor of a and b.
+All that remains is to show that m | a.
+
+The core of our proof lies in showing that m | a.
+
+By division "algorithm"
+
+a=qm+r where 0<=r<m
+
+
+m=sa+tb
+
+a=q(sa+tb)+r
+
+r=a-q(sa+tb)
+r=a-qsa-qtb
+r=a(1-qs)+(-qt)b
+
+We just expressed r as a linear combination of a and b.
+But m is the smallest linear combination of a and b and 0<=r<m.
+
+As r cannot be smaller than m and positive that means that r=0. This implies m | a.
+
+
+
+Corollary 4.2.2: An integer is a linear combination of a and b iff it is a multiple of gcd(a,b).
+Proof: We have shown above that every linear combination of a and b is a multiple of gcd.
+        Conversely since gcd(a,b) is a linear combination of a and b every multiple of gcd as well.
+        gcd(a,b) = sa+tb
+        k.gcd(a,b) = k.(sa+tb) = ks.a+kt.b ie every multiple of gcd is also a linear combination of a and b.
+        
+
+We can now restate the water jugs lemma in terms of gcd.
+
+Corollary 4.2.3: Suppose we have water jugs with capacities a and b. Then the amout of water in the two jugs is a multiple of the gcd.
+
+For example there is no way to form 4 gallons using 3 and 6 gallons because 4 is not a multiple of gcd(3,6)=3.
+
+
+
+
+
+
+
 
 
 
