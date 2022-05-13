@@ -95,6 +95,148 @@ Corollary 4.2.3: Suppose we have water jugs with capacities a and b. Then the am
 For example there is no way to form 4 gallons using 3 and 6 gallons because 4 is not a multiple of gcd(3,6)=3.
 
 
+Properties of the gcd:
+
+Lemma 4.2.4: The below facts about the gcd hold
+1. Every common divisor of a and b divides the gcd(a,b).
+    
+    c | a and c | b ie c | sa+tb ie sa+tb = k.c
+    gcd(a,b) = sa+tb 
+    kc = gcd(a,b) ie c | gcd(a,b)
+
+    Every common divisor of a,b divides the gcd
+
+
+****************************** Maybe think more about the below problem ******************************
+
+    Can we find the next common divisor which we know obviously will be smaller then the gcd.
+
+    Let the next common divisor be x.
+    
+    x<gcd(a,b)  and x | gcd(a,b)
+
+    ie. gcd(a,b)=m.x
+
+******************************************************************************************************
+    
+  The above result is not very "obvious" ie we can't really visualize it in our mind. It will be very helpful     to learn tools which break down the visualizations.
+
+2. gcd(ka,kb)=k.gcd(a,b) for all k>0
+
+*************** Proof attempt for the above relation ****************************************************
+  
+   let m=gcd(ka,kb)
+   m | ka and m | kb
+   ka = m.x
+   kb = m.y
+
+   let gcd(a,b)=n
+   a=n.p
+   b=n.q
+
+   k.np = m.x
+ie.(p/x).n.k = m
+
+Let's approach this in a different manner
+
+We have learnt a couple of neat tricks we can use to approach a gcd problem
+
+Firstly we can take two numbers a and b and go about representing their linear combination as the gcd.
+
+This is the smallest linear combination possible. The proof is slightly funny but enjoyable.
+sa+tb=gcd(a,b)
+
+gcd(ka,kb)=i.ka+j.kb
+          =k(ia+jb) # We need to prove ia+jb=gcd(a,b) ie. ia+jb is smallest linear combination of a and b
+                    # How do we go about doing this?
+                    # Will every linear combination be a multiple of gcd? Yes because gcd(a,b) will divide
+                      any possible linear combination of a and b
+
+          =k(i.gcd(a,b).m+j.gcd(a,b).n)
+          =k.gcd(a,b)(im+jn)
+
+
+gcd(ka,kb) = i.ka+j.kb which is the smallest possible combination of ka and kb. 
+
+If we take k common from the above equation we get gcd(ka,kb) = k(ia+jb) = k.x.gcd(a,b)
+# How can we argue that ia+jb is the smallest possible combination of a and b?
+# As we know know that ia+jb is a multiple of the gcd we represent it as x.gcd(a,b)
+# We need to prove that x=1
+
+
+gdc(a,b) | ia+jb
+
+******************************************************************************************************
+
+
+3. If gcd(a,b)=1 and gcd(a,c)=1, then gcd(a,bc)=1
+
+
+gcd(a,b) so i.a+j.b=1  ---- 1
+gcd(a,c) so m.a+n.c=1  ---- 2
+
+multiplying 1 and 2
+
+(i.a+j.b)(m.a+n.c)=1
+
+(i.a.a.m+i.a.n.c+j.b.m.a+j.b.n.c)=1
+a(iam+in+jbm)+bc(jn)=1
+
+The above is a linear combination of a and bc which is equal to 1 therefore it is equal to gcd(a,bc)
+
+******************************************************************************************************
+
+
+4.If a | bc and gcd(a,b) = 1 then a | c
+
+  gcd(a,b)=1 ie. pa+qb=1 thus pa+qb is equal to gcd(a,b).
+  now a | bc ie bc=x.a
+
+  # Didnt really understand the proof for this but we'll let it be for now because we have bigger fish to fry.
+
+
+5. gcd(a,b) = gcd(a,rem(a,b))
+
+  The above algorithm is called the euclid's algorithm and it is useful for quickly computing the gcd of large   numbers.
+
+  # We will look into the proof of Euclid's algorithm tomorrow and will need a pen and paper or whiteboard.
+
+  The text (being MIT text) assumes students will spend time proving things themselves rather then everything     being covered in the text and following these proofs makes us able to actually get into the habit of           proving and following slightly complex inductive proofs.
+
+
+********** Go through this document again and try to follow up on the text. We'll be moving onto the textbook next **********************
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 
