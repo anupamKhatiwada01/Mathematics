@@ -30,5 +30,3 @@ How many bits will be required to store 10^16?
 Not very many.
 
 Turns out finding the two prime numbers is a well documented leetcode question. We'll learn more about it in the algorithms class.
-
-

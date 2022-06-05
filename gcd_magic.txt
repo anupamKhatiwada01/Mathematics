@@ -1,0 +1,24 @@
+Proposition:
+Suppose a,b lies in the set of real numbers then there exists x and y which belong to the set of integers such that ax+by=gcd(a,b).
+
+
+One really insane thing that we can notice regarding all combinations of ax+by is that all values of ax+by are a multiple of gcd ie.
+
+ax+by = n . gcd(a,b) where n belongs to the set of integers and ax+by>0
+
+let p = gcd(a,b);
+
+a%p==0 && b%p==0
+
+p.t.x+p.q.y
+p(tx+qy)
+
+ie ax+by is divisable by gcd for any values of a and b belonging to set of integers.
+
+Thus all combinations of ax+by are a multiple of gcd for x and y larger than 0.
+
+We need to prove that gcd is the smallest linear combination of a and b.
+
+
+
+

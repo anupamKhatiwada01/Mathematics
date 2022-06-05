@@ -19,19 +19,3 @@ one of the cases will be composite.
 The parity of N-1 is the deciding factor here. If N-1 is even which will only be the case if 2 is in the set of {p1,p2,p3,.,pn} then N will be odd so it is a candidate for being prime otherwise N will be even which will obviously not be prime.
 
 That solves our necessity.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

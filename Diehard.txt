@@ -41,13 +41,3 @@ What are the possible things that could happen in the (n+1)th case?
     2. b does not become full and a gets empty
         x=0 and y=aI+bJ+aM+bN=a(I+M)+b(J+N) both of which are linear functions of a and b.
 Thus in all possible cases the function is satisfied. Thus we can say it is true.
-
-
-
-
-
-
-
-
-
-
